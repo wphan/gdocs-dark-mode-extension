@@ -27,8 +27,8 @@ buttons.forEach(btn => {
     setActiveButton(newMode);
 
     chrome.storage.sync.set({ mode: newMode }, () => {
-      // Notify all Google Docs and Meet tabs to update
-      chrome.tabs.query({ url: ['https://docs.google.com/*', 'https://meet.google.com/*'] }, (tabs) => {
+      // Notify all Google Docs tabs to update
+      chrome.tabs.query({ url: 'https://docs.google.com/*' }, (tabs) => {
         tabs.forEach((tab) => {
           chrome.tabs.sendMessage(tab.id, { action: 'updateTheme', mode: newMode });
         });

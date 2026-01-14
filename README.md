@@ -1,6 +1,6 @@
-# Google Dark Mode
+# Google Docs Dark Mode
 
-A browser extension that applies dark mode to Google Docs, Sheets, and Meet based on your system settings.
+A browser extension that applies dark mode to Google Docs and Sheets based on your system settings.
 
 ## Screenshots
 
@@ -10,13 +10,11 @@ A browser extension that applies dark mode to Google Docs, Sheets, and Meet base
 
 ![Google Sheets](screenshots/sheet-screenshot.png)
 
-![Google Meet](screenshots/meets-screenshot.png)
-
 ## Features
 
 - Automatically follows macOS system dark/light mode
 - Manual override: force dark mode on or off
-- Works on Google Docs, Sheets, and Meet
+- Works on Google Docs and Sheets
 - Minimal, non-invasive design
 
 ## Install
@@ -39,4 +37,3 @@ Click the extension icon to toggle between:
 ## Supported Sites
 
 - `docs.google.com` (Docs, Sheets, Slides)
-- `meet.google.com`
