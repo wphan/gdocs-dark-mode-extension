@@ -22,7 +22,7 @@ A browser extension that applies dark mode to Google Docs, Sheets, and Meet base
 ## Install
 
 1. Clone or download this repository
-2. Open Chrome or Brave and navigate to `chrome://extensions`
+2. Open extensions settings on Chrome (`chrome://extensions`) or Brave (`brave://extensions`)
 3. Enable **Developer mode** (toggle in top right)
 4. Click **Load unpacked**
 5. Select the `google-docs-dark-mode` folder
