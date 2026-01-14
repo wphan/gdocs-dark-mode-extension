@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Google Dark Mode",
+  "version": "1.0.0",
+  "description": "Automatically apply dark mode to Google Docs and Meet based on system settings",
+  "permissions": ["storage", "tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Google Dark Mode"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://docs.google.com/*",
+        "https://meet.google.com/*"
+      ],
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

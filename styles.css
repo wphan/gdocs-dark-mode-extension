@@ -1,0 +1,34 @@
+/* Google Docs Dark Mode - Filter-based inversion approach */
+
+/* When dark mode is active, invert the entire page with softer dark */
+html.gdocs-dark-mode {
+  background-color: #202020 !important;
+}
+
+html.gdocs-dark-mode body {
+  filter: invert(0.88) hue-rotate(180deg);
+  background-color: white !important;
+}
+
+/* Re-invert images and videos so they look normal (but not canvas - for Sheets grid) */
+html.gdocs-dark-mode img,
+html.gdocs-dark-mode video,
+html.gdocs-dark-mode picture,
+html.gdocs-dark-mode svg:not([class*="grid"]),
+html.gdocs-dark-mode [style*="background-image"],
+html.gdocs-dark-mode iframe {
+  filter: invert(1.136) hue-rotate(180deg); /* 1/0.88 to fully counteract parent */
+}
+
+/* Re-invert template previews and document thumbnails */
+html.gdocs-dark-mode [data-thumbnail],
+html.gdocs-dark-mode [aria-label*="thumbnail"],
+html.gdocs-dark-mode .docs-homescreen-templates-templateview-preview {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* Fix any double-inverted nested elements */
+html.gdocs-dark-mode img img,
+html.gdocs-dark-mode svg svg {
+  filter: none;
+}
