@@ -4,6 +4,8 @@ A browser extension that applies dark mode to Google Docs, Sheets, and Meet base
 
 ## Screenshots
 
+![Extension](screenshots/extension-screenshot.png)
+
 ![Google Docs](screenshots/docs-screenshot.png)
 
 ![Google Sheets](screenshots/sheet-screenshot.png)
